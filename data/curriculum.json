@@ -1,0 +1,20 @@
+{
+  "levels": [
+    {
+      "level": "A0",
+      "name": "Complete Beginner",
+      "description": "Learn basic English - Hello, goodbye, simple words",
+      "words": ["hello", "goodbye", "yes", "no", "thank you", "please", "water", "food", "cat", "dog", "good", "bad", "big", "small", "happy"],
+      "exercises": [
+        {"type": "vocabulary", "question": "What does 'hello' mean?", "answer": "Greeting"},
+        {"type": "vocabulary", "question": "What does 'goodbye' mean?", "answer": "Farewell"}
+      ]
+    },
+    {"level": "A1", "name": "Beginner", "words": ["my", "name", "is", "I", "you", "he", "she", "good", "morning"]},
+    {"level": "A2", "name": "Elementary", "words": ["student", "teacher", "school", "book", "pen"]},
+    {"level": "B1", "name": "Intermediate", "words": ["understand", "explain", "important"]},
+    {"level": "B2", "name": "Upper Intermediate", "words": ["sophisticated", "implications"]},
+    {"level": "C1", "name": "Advanced", "words": ["nuance", "eloquent"]},
+    {"level": "C2", "name": "Mastery", "words": ["proficiency", "native-like"]}
+  ]
+}
