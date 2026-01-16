@@ -1,0 +1,33 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; }
+.header { text-align: center; color: white; margin-bottom: 30px; padding: 20px; }
+.header h1 { font-size: 2.5em; margin-bottom: 10px; }
+.screen { background: white; border-radius: 15px; padding: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); display: none; animation: slideIn 0.3s ease-in-out; }
+.screen.active { display: block; }
+@keyframes slideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.levels-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 20px; }
+.level-btn { padding: 15px; border: 2px solid #667eea; background: white; border-radius: 10px; cursor: pointer; font-size: 1em; transition: all 0.3s; }
+.level-btn:hover { background: #667eea; color: white; transform: translateY(-3px); }
+.learning-header { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px solid #f0f0f0; }
+.progress-bar { width: 100%; height: 10px; background: #f0f0f0; border-radius: 10px; margin: 15px 0; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); width: 0%; transition: width 0.3s; }
+.exercise-section { background: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+.exercise-buttons { display: flex; gap: 10px; margin-top: 20px; }
+.btn-primary, .btn-secondary, .btn-chat { padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 1em; transition: all 0.3s; }
+.btn-primary { background: linear-gradient(135deg, #667eea, #764ba2); color: white; flex: 1; }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(102,126,234,0.4); }
+.btn-secondary { background: white; color: #667eea; border: 2px solid #667eea; flex: 1; }
+.btn-secondary:hover { background: #f0f0f0; }
+.chat-section { background: #f9f9f9; padding: 20px; border-radius: 10px; }
+.chat-history { height: 300px; overflow-y: auto; margin-bottom: 15px; padding: 10px; background: white; border-radius: 8px; }
+.chat-message { margin-bottom: 10px; padding: 10px; border-radius: 8px; max-width: 80%; }
+.chat-message.user { background: #667eea; color: white; margin-left: auto; text-align: right; }
+.chat-message.tutor { background: #e0e0e0; color: black; }
+.chat-input-area { display: flex; gap: 10px; }
+.chat-input-area input { flex: 1; padding: 12px; border: 2px solid #ddd; border-radius: 8px; font-size: 1em; }
+.chat-input-area input:focus { outline: none; border-color: #667eea; }
+.btn-chat { background: #667eea; color: white; padding: 12px 30px; }
+.btn-chat:hover { background: #764ba2; }
+h2, h3 { color: #333; margin-bottom: 20px; }
+@media (max-width: 600px) { .header h1 { font-size: 1.8em; } .levels-grid { grid-template-columns: 1fr; } }
