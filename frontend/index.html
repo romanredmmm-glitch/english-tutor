@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI English Tutor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <header class="header">
+                <h1>🎓 AI English Tutor</h1>
+                <p>Learn English with AI - Completely Free</p>
+            </header>
+
+            <main id="mainContent">
+                <div id="levelScreen" class="screen active">
+                    <h2>Select Your Level</h2>
+                    <div class="levels-grid">
+                        <button class="level-btn" data-level="A0">A0 - Complete Beginner</button>
+                        <button class="level-btn" data-level="A1">A1 - Beginner</button>
+                        <button class="level-btn" data-level="A2">A2 - Elementary</button>
+                        <button class="level-btn" data-level="B1">B1 - Intermediate</button>
+                        <button class="level-btn" data-level="B2">B2 - Upper Intermediate</button>
+                        <button class="level-btn" data-level="C1">C1 - Advanced</button>
+                        <button class="level-btn" data-level="C2">C2 - Mastery</button>
+                    </div>
+                </div>
+
+                <div id="learningScreen" class="screen">
+                    <div class="learning-header">
+                        <h2 id="levelTitle"></h2>
+                        <div class="progress-bar">
+                            <div id="progressFill" class="progress-fill"></div>
+                        </div>
+                        <p>Points: <span id="points">0</span></p>
+                    </div>
+
+                    <div class="exercise-section">
+                        <div id="exerciseContent"></div>
+                        <div class="exercise-buttons">
+                            <button id="submitBtn" class="btn-primary">Submit Answer</button>
+                            <button id="nextBtn" class="btn-secondary">Next Exercise</button>
+                        </div>
+                    </div>
+
+                    <div class="chat-section">
+                        <h3>💬 Chat with Tutor</h3>
+                        <div id="chatHistory" class="chat-history"></div>
+                        <div class="chat-input-area">
+                            <input type="text" id="chatInput" placeholder="Ask something or describe what you want to learn...">
+                            <button id="sendBtn" class="btn-chat">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
